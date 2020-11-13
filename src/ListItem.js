@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 // class ListItem extends Component {
 //     render() { 
 //         return ( 
