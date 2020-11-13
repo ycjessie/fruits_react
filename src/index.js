@@ -3,10 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+const Fruits = [
+  "Mango",
+  "Banana",
+  "Leechi",
+  "Orange",
+  "Apple",
+  "Pineapple",
+  "Dates",
+  "Grapes",
+];
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App fruits={Fruits}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

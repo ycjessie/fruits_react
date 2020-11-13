@@ -25,7 +25,7 @@ handleSearchChange=(e)=>{
         <h1>Fruits</h1>
         <Search value={this.state.searchValue}
         onchange={this.handleSearchChange}/>
-        <ListContainer />
+        <ListContainer fruits={this.props.fruits}/>
         
       </>
     );
