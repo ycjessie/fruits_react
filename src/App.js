@@ -8,13 +8,23 @@ class App extends Component {
     this.state={
       searchValue:'Water',
     }
-  }
+  
+}
+handleSearchChange=(e)=>{
+  const textValue = e.target.value;
+  console.log('Box', textValue);
+  this.setState({
+    searchValue:textValue,
+  });
+
+};
   render() { 
 
     return (
       <>
         <h1>Fruits</h1>
-        <Search value={this.state.searchValue}/>
+        <Search value={this.state.searchValue}
+        onchange={this.handleSearchChange}/>
         <ListContainer />
         
       </>
