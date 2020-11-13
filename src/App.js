@@ -15,6 +15,7 @@ handleSearchChange=(e)=>{
   console.log('Box', textValue);
   this.setState({
     searchValue:textValue,
+    fruitsToDisplay:this.props.fruits,
   });
 
 };
@@ -23,9 +24,9 @@ handleSearchChange=(e)=>{
     return (
       <>
         <h1>Fruits</h1>
-        <Search value={this.state.searchValue}
+        <Search value={this.state.searchValue}//bounded to setState line16
         onchange={this.handleSearchChange}/>
-        <ListContainer fruits={this.props.fruits}/>
+        <ListContainer fruits={this.state.fruitsToDisplay}/>
         
       </>
     );

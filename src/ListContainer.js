@@ -8,7 +8,7 @@ class ListContainer extends Component {
     });
     return (
       <ul>
-        <li>{allFruits}</li>
+        {allFruits}
       </ul>
     );
   }
