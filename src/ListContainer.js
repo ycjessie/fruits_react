@@ -6,7 +6,9 @@ class ListContainer extends Component {
 
             <ul>
                 <li>
-                    <ListItem />
+                    <ListItem name={"fake items"}/>
+                    <ListItem name={"fake items"}/>
+                    <ListItem name={"fake items"}/>
                 </li>
             </ul>
 
