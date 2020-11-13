@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import ListItem from './ListItem';
 class ListContainer extends Component {
     render() { 
         return ( 
 
             <ul>
                 <li>
-                    list items
+                    <ListItem />
                 </li>
             </ul>
 
