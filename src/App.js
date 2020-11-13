@@ -7,6 +7,7 @@ class App extends Component {
     //Initialize the Search value to an Empty String
     this.state={
       searchValue:'Water',
+      fruitsToDisplay:this.props.fruits,
     }
   
 }
@@ -15,7 +16,8 @@ handleSearchChange=(e)=>{
   console.log('Box', textValue);
   this.setState({
     searchValue:textValue,
-    fruitsToDisplay:this.props.fruits,
+    fruitsToDisplay:[],
+    
   });
 
 };
