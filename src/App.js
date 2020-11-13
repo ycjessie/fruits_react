@@ -8,6 +8,7 @@ class App extends Component {
     this.state = {
       searchValue: '',
       fruitsToDisplay: this.props.fruits,
+      fruitsNotToDisplay: [],
     };
   }
   handleSearchChange = (e) => {
@@ -18,10 +19,15 @@ class App extends Component {
     const filteredFruitList=this.props.fruits.filter((fruit)=>{
       return fruit.toLowerCase().includes(textValue.toLowerCase());
     })
+
+    const notfilteredFruitList=this.props.fruits.filter((fruit)=>{
+      return !fruit.toLowerCase().includes(textValue.toLowerCase());
+    })
     // console.log("Box", textValue);
     this.setState({
       searchValue: textValue,
       fruitsToDisplay: filteredFruitList,
+      fruitsNotToDisplay: notfilteredFruitList,
     });
   };
   render() {
@@ -33,6 +39,7 @@ class App extends Component {
           onChange={this.handleSearchChange}
         />
         <ListContainer fruits={this.state.fruitsToDisplay} />
+        <ListContainer fruits={this.state.fruitsNotToDisplay} />
       </>
     );
   }
