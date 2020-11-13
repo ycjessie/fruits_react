@@ -5,7 +5,7 @@ class Search extends Component {
       <>
         <div>
           <label>Search Fruit </label>
-          <input type="text" placeholder="search for"></input>
+          <input type="text" placeholder="search for?"></input>
         </div>
       </>
     );
