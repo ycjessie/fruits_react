@@ -6,8 +6,8 @@ class Search extends Component {
         <div>
           <label>Search Fruit </label>
           <input type="text" placeholder="search for?"
-          value={this.props.searchValue}
-          onChange={this.handleSearchChange}></input>
+          value={this.props.value}
+          onChange={this.props.onChange}></input>
         </div>
       </>
     );
