@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <>
         <h1>Fruits</h1>
-        <Search />
+        <Search value={this.state.searchValue}/>
         <ListContainer />
         
       </>
