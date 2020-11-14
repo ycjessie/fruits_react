@@ -35,7 +35,9 @@ class App extends Component {
       <>
         <h1>Fruits</h1>
         <Search
+          //Search.js line 9
           value={this.state.searchValue} //bounded to setState line16
+          //Search.js line 10
           onChange={this.handleSearchChange}
         />
         <ListContainer fruits={this.state.fruitsToDisplay} />
